@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: Run tests
+    command: watch -n 3 --color \ 
+             checkov -d . --framework dockerfile
+    openMode: split-right
